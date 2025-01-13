@@ -1,13 +1,17 @@
 import React from "react";
-import './App.css';
-import Index from "./components/index"; // Import the Index component from the components folder
+import Chat from "./components/Chat";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Index /> {/* Render the Index component here */}
+      <header className="app-header">
+        <h1>Real-Time Conversational App</h1>
+        <p className="developer-info">Developed by: Team Driller</p>
       </header>
+      <main className="app-main">
+        <Chat />
+      </main>
     </div>
   );
 }
